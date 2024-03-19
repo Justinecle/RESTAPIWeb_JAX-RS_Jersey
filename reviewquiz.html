@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réviser un Quiz - Quiz App</title>
+    <!-- Lien vers Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: black; /* Fond noir */
+            color: white; /* Texte blanc */
+            font-variant: small-caps; /* Variation de la font */
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif /* Font choisie pour la page */
+        }
+
+        .nav-link {
+            padding: 20px; /* Espacement intérieur */
+            margin-top: 10px; /*Espace supplementaire au dessus des liens */
+            border-radius: 20px; /* Coins arrondis */
+            text-decoration: none; /* Pas de soulignement */
+            transition: background-color 0.3s ease; /* Transition de couleur au survol */
+            color: black; /* Texte blanc */
+            background-color: white; /* Fond noir */
+        }
+
+        .navbar-links {
+            max-width: 170px; /* Choisissez la largeur maximale souhaitée */
+            margin-left: 30px; /* Pour aligner à gauche */
+        }
+
+        .nav-link:hover {
+            background-color: black; /* Fond noir */
+            color: white; /* Texte blanc */
+        }
+
+        .list-container {
+            max-width: 600px; /* Définissez la largeur maximale souhaitée */
+            margin: 0 auto; /* Centrez horizontalement le conteneur */
+        }
+    </style>
+</head>
+<body>
+    <!-- Pour les liens de la navbar -->
+    <div class="navbar-links">
+        <!-- Liens de la navbar -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Accueil</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="passquiz.html">Passer un quiz</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Contenu principal -->
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <h1 class="pb-3 text-center">Choisir un quiz à réviser</h1>
+            <div class="list-container"> <!-- classe pour le conteneur de la liste -->
+                <div class="list-group text-center mx-5" id="listUsedQuizzes">
+                    <!-- Contenu de la liste ajouté dynamiquement -->
+                </div>
+            </div>  
+        </div>
+    </div>
+    
+    <!-- Lien vers le fichier javascript -->
+    <script src="/js/reviewquiz.js"></script>
+</body>
+</html>

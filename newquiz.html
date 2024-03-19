@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nouveau Quiz - Quiz App</title>
+    <!-- Lien vers Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #ffffff; /* Fond blanc */
+            color: #000000; /* Texte noir */
+            font-variant: small-caps; /* Variation de la font */
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Police d'ecriture choisie */
+        }
+
+        .nav-link {
+            padding: 20px; /* Espacement intérieur */
+            margin-top: 10px; /*Espace supplementaire au dessus des liens */
+            background-color: #000000; /* Fond noir */
+            border-radius: 20px; /* Coins arrondis */
+            color: #ffffff; /* Texte blanc */
+            text-decoration: none; /* Pas de soulignement */
+            transition: background-color 0.3s ease; /* Transition de couleur au survol */
+        }
+
+        .navbar-links {
+            max-width: 100px; /* Choisissez la largeur maximale souhaitée */
+            margin-left: 30px; /* Pour aligner à gauche */
+        }
+
+        .nav-link:hover {
+            background-color: #ffffff; /* Fond blanc */
+            color: #000000; /* Texte noir */
+        }
+
+        label {
+            font-size: 1rem; /* Taille de police moyenne */
+            margin-bottom: 10px; /* Marge inférieure */
+        }
+
+        .form {
+            color: white; /* Couleur de l'ecriture */
+            padding: 40px; /* Espacement */
+            border-radius: 10px;  /* Arrondissement de la bordure autour du form */
+        }
+
+        #result {
+            color:white; /* Couleur ecriture du resultat de l'ajout */
+            font-style: italic; /* Font en italique */
+        }
+    </style>
+</head>
+<body>
+    <!-- Pour les liens de la navbar -->
+    <div class="navbar-links">
+        <!-- Liens de la navbar -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Retour</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Formulaire pour ajouter un quiz -->
+    <div class="container col-md-6 bg-black form">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <h4 class="text-center mb-4">Créer un nouveau Quiz</h4>
+
+                <!-- Champ pour saisir le titre du quiz -->
+                <div class="mb-3">
+                    <label for="quizTitle" class="form-label">Titre du Quiz:</label>
+                    <input type="text" class="form-control" id="quizTitle">
+                </div>
+
+                <!-- Champs pour choisir le nombre de questions de chaque difficulté -->
+                <div class="mb-3">
+                    <label for="facileInput" class="form-label">Facile:</label>
+                    <input type="number" class="form-control" id="facileInput" min="0" value="0">
+                </div>
+                <div class="mb-3">
+                    <label for="moyenInput" class="form-label">Moyen:</label>
+                    <input type="number" class="form-control" id="moyenInput" min="0" value="0">
+                </div>
+                <div class="mb-3">
+                    <label for="difficileInput" class="form-label">Difficile:</label>
+                    <input type="number" class="form-control" id="difficileInput" min="0" value="0">
+                </div>
+
+                <!-- Boutons pour générer le quiz ou annuler -->
+                <div class="d-grid gap-2">
+                    <button class="btn btn-dark" onclick="generateQuiz()">Générer Quiz</button>
+                    <button class="btn btn-secondary" onclick="cancelQuiz()">Annuler</button>
+                </div>
+
+                <!-- Espace pour afficher le résultat -->
+                <div id="result" class="mt-3"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Lien vers le fichier javascript -->
+    <script src="/js/newquiz.js"></script>
+</body>
+</html>
