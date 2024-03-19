@@ -47,13 +47,14 @@ Cette application Quiz est conçue pour permettre aux utilisateurs de créer, pa
 - Assurez-vous que la base de données Always-Date est installée et fonctionnelle.
 - Configurez les paramètres de connexion à la base de données dans le projet back-end.
 
-
-https://imgur.com/GFA3kIF
-
-https://imgur.com/M12kQCw
 ## Contributeurs
 - Justine Clément
 Dans le cadre du cours 420-110-GG PROGRAMMATION DE SERVICES WEB du Cégep Gérald Godin
 
 ## Contact
 Pour toute question ou commentaire, veuillez contacter [justine.clement@icloud.com].
+
+## Visuel
+![Home](https://imgur.com/GFA3kIF.png)
+![Creer un Quiz](https://imgur.com/M12kQCw.png)
+
